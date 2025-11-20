@@ -1,0 +1,119 @@
+/* Style général */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 40px 20px;
+  background-color: #f5f5dc;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Main */
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: #dadaac;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* MODE SOMBRE */
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark header {
+  background-color: #2c2c2c;
+}
+
+.dark footer {
+  background-color: #3a3a3a;
+  #toggle {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#toggle:hover {
+  opacity: 0.8;
+}
+
+}
+body {
+  transition: 0.3s ease;
+}
+
+
+/* Styles du bouton burger */
+#burger {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  background: black;
+  color: white;
+  width: 40px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Menu burger fermé (hors écran) */
+#menu {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  padding-top: 50px;
+  transition: left 0.3s ease;
+}
+
+/* Liens */
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+/* Menu ouvert */
+#menu.menu-open {
+  left: 0;
+}
+#burger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999; 
+}
